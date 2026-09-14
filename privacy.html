@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy: rclone</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 2rem 1rem; color: #1a1a1a; background: #fff; }
+  footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; font-size: 0.9rem; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy: rclone</h1>
+<p><em>Last updated: 14 September 2026</em></p>
+
+<p>This policy covers the application named <strong>rclone</strong> (the "App"): a private, single-user
+deployment of the open-source rclone tool, operated by Alain Fung (the "Owner") to back up his home
+servers to his own Google Drive. See the <a href="index.html">home page</a> for what the App does.</p>
+
+<h2>1. Who uses the App</h2>
+<p>The App has one user: the Owner. It is not offered to the public, and nobody else can sign in to or
+use it. Only the Owner's own Google account ever authorises it.</p>
+
+<h2>2. Google user data the App accesses</h2>
+<p>With the Owner's consent, the App requests these Google Drive API scopes:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/drive</code>: to create, read, update, move and delete
+      files in the Owner's Google Drive;</li>
+  <li><code>https://www.googleapis.com/auth/drive.metadata.readonly</code>: to read file names, sizes,
+      dates and checksums, so it can tell which backups already exist.</li>
+</ul>
+<p>The App accesses no other Google data: no Gmail, contacts, calendar, profile details or any other service.</p>
+
+<h2>3. How the data is used</h2>
+<p>The App uses Google Drive data only to:</p>
+<ul>
+  <li>upload the Owner's backup files (server backup archives, photos and notes) to the Owner's Drive;</li>
+  <li>list and compare existing files so that unchanged files are not uploaded again;</li>
+  <li>move or delete old backup copies within the Owner's backup folders.</li>
+</ul>
+<p>The data is never used for advertising, profiling, analytics or machine-learning training, and
+never for any purpose other than the Owner's own backups.</p>
+
+<h2>4. Storage and security</h2>
+<p>The OAuth access and refresh tokens are stored only in configuration files on the Owner's own servers
+on his private home network, readable only by the system administrator account. File contents
+go directly between the Owner's servers and Google Drive over encrypted (HTTPS) connections. The App
+runs no website, database or cloud service of its own, so no Google user data is stored anywhere except
+the Owner's servers and the Owner's Google Drive.</p>
+
+<h2>5. Sharing</h2>
+<p>Google user data is <strong>not shared, sold, transferred or disclosed</strong> to any third party.
+No person other than the Owner has access to it.</p>
+
+<h2>6. Retention and deletion</h2>
+<p>Backup files stay in the Owner's Google Drive for as long as the Owner chooses. Older server backups are deleted
+automatically after about one week. Access can be revoked at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; revoking it
+immediately stops the App from reaching Google Drive. Deleting the local configuration removes the stored
+tokens.</p>
+
+<h2>7. Cookies and tracking</h2>
+<p>Neither the App nor this website uses cookies, analytics or tracking of any kind.</p>
+
+<h2>8. Google API Services User Data Policy</h2>
+<p>The App's use and transfer of information received from Google APIs complies with the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>9. Changes and contact</h2>
+<p>Any change to this policy will be posted on this page with a new "last updated" date. For questions, contact the
+Owner via <a href="https://github.com/alainfungchc">github.com/alainfungchc</a>.</p>
+
+<footer>
+  <a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a>
+</footer>
+</body>
+</html>

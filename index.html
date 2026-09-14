@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone</title>
+<meta name="description" content="rclone: a private, single-user deployment of the open-source rclone tool that backs up Alain Fung's home servers to his own Google Drive.">
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 2rem 1rem; color: #1a1a1a; background: #fff; }
+  h1 { margin-bottom: 0.2rem; }
+  .sub { color: #555; margin-top: 0; }
+  footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; font-size: 0.9rem; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>rclone</h1>
+<p class="sub">Private backup application for the Clockhouse home lab</p>
+
+<h2>What this app is</h2>
+<p><strong>rclone</strong> is a private, single-user deployment of the open-source
+<a href="https://rclone.org">rclone</a> command-line tool, operated by Alain Fung for his own
+home servers. It is not a public service, and nobody else can sign up for or use it.</p>
+
+<h2>What it does</h2>
+<p>The app copies backup files from the owner's home servers to the owner's own Google Drive account, so that an
+off-site copy exists if the home servers fail. Specifically, it:</p>
+<ul>
+  <li>uploads weekly virtual-machine backup archives to a folder in the owner's Google Drive;</li>
+  <li>keeps an off-site copy of the owner's personal photo library and notes;</li>
+  <li>lists, moves and deletes files inside those backup folders to keep only current copies.</li>
+</ul>
+<p>It uses the Google Drive API only for these purposes. It has a single user (the owner), runs
+unattended on the owner's own hardware, and has no user interface or login of its own.</p>
+
+<h2>Google user data</h2>
+<p>The only Google account this app ever accesses is the owner's. No data is shared with anyone else. Full details are
+in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> ·
+  <a href="terms.html">Terms of Service</a> ·
+  Contact: <a href="https://github.com/alainfungchc">github.com/alainfungchc</a>
+</footer>
+</body>
+</html>
